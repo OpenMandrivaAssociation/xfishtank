@@ -1,18 +1,23 @@
-Summary:	An X Window System graphic display of an animated aquarium
-Name:		xfishtank
-Version:	2.1tp
-Release:	8mdk
+%define name	xfishtank
+%define version	2.1tp
+%define release %mkrel 9
+
+Summary:	A graphic display of an animated aquarium
+Name:		%{name}
+Version:	%{version}
+Release:	%{release}
 License:	MIT
 Group:		Toys
-BuildRequires:	XFree86-devel
+BuildRequires:	libx11-devel libxext-devel imake
 
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/xfishtank-%{version}.tar.bz2
-Patch:		xfishtank-2.1tp-xf4.patch.bz2
+Patch:		xfishtank-2.1tp-xf4.patch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 
 %description
 The xfishtank program displays an animated aquarium background on your
-screen.
+screen. It sets the X root window so will not work if your desktop
+environment sets the background.
 
 %prep
 
@@ -34,4 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.Linux  README.TrueColor  README.Why.2.1tp
 %defattr(755,root,root,755)
-%{_prefix}/X11R6/bin/xfishtank
+%{_bindir}/%{name}
+
