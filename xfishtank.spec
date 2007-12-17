@@ -12,7 +12,6 @@ BuildRequires:	libx11-devel libxext-devel imake
 
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/xfishtank-%{version}.tar.bz2
 Patch:		xfishtank-2.1tp-xf4.patch
-BuildRoot:	%_tmppath/%name-%version-%release-root
 
 %description
 The xfishtank program displays an animated aquarium background on your
