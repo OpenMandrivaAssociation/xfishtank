@@ -1,11 +1,10 @@
 %define name	xfishtank
 %define version	2.1tp
-%define release %mkrel 9
 
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	%{release}
+Release:	%mkrel 10
 License:	MIT
 Group:		Toys
 BuildRequires:	libx11-devel libxext-devel imake
