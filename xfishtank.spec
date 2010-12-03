@@ -4,7 +4,7 @@
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 13
+Release:	%mkrel 14
 License:	MIT
 Group:		Toys
 BuildRequires:	libx11-devel libxext-devel imake
