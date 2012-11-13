@@ -1,0 +1,11 @@
+--- Imakefile	Mon Apr 29 16:53:39 1996
++++ Imakefile.xf4	Tue May 23 22:00:28 2000
+@@ -7,7 +7,7 @@
+            SRCS = xfish.c medcut.c read.c gifread.c
+            OBJS = xfish.o medcut.o read.o gifread.o
+ 
+-ComplexProgramTarget(xfishtank)
++ComplexProgramTargetNoMan(xfishtank)
+ 
+ xfishy.h: makeh FishList
+ 	./makeh > xfishy.h
