@@ -7,7 +7,7 @@ Version:	%{version}
 Release:	%mkrel 17
 License:	MIT
 Group:		Toys
-BuildRequires:	libx11-devel libxext-devel imake
+BuildRequires:	pkgconfig(x11) libxext-devel imake
 
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/xfishtank-%{version}.tar.bz2
 Patch:		xfishtank-2.1tp-xf4.patch
