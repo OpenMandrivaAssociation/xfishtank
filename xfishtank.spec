@@ -4,14 +4,13 @@
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel 17
+Release:	18
 License:	MIT
 Group:		Toys
 BuildRequires:	pkgconfig(x11) libxext-devel imake
 
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/xfishtank-%{version}.tar.bz2
 Patch:		xfishtank-2.1tp-xf4.patch
-BuildRoot:	%_tmppath/%name-%version-%release-root
 
 %description
 The xfishtank program displays an animated aquarium background on your
