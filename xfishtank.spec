@@ -4,7 +4,7 @@
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	24
+Release:	25
 License:	MIT
 Group:		Toys
 BuildRequires:	pkgconfig(x11) libxext-devel imake
