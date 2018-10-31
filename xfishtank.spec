@@ -4,7 +4,7 @@
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	26
+Release:	27
 License:	MIT
 Group:		Toys
 BuildRequires:	pkgconfig(x11) libxext-devel imake
@@ -82,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT
 * Sun Jan 01 2006 Mandriva Linux Team <http://www.mandrivaexpert.com/> 2.1tp-8mdk
 - Rebuild
 
-* Sat Jul 12 2003 Per ÿyvind Karlsen <peroyvind@sintrax.net> 2.1tp-7mdk
+* Sat Jul 12 2003 Per √òyvind Karlsen <peroyvind@sintrax.net> 2.1tp-7mdk
 - rebuild
 - macroize
 - rm -rf $RPM_BUILD_ROOT at the beginning of %%install
@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Nov  2 1999 Chmouel Boudjnah <chmouel@mandrakesoft.com>
 - 2.1tp (whork with 16 and 24 display).
 
-* Thu May  6 1999 Bernhard Rosenkr‰nzer <bero@mandrakesoft.com>
+* Thu May  6 1999 Bernhard Rosenkr√§nzer <bero@mandrakesoft.com>
 - Mandrake adaptions
 
 * Sun Mar 21 1999 Cristian Gafton <gafton@redhat.com> 
