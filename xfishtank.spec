@@ -4,10 +4,12 @@
 Summary:	A graphic display of an animated aquarium
 Name:		%{name}
 Version:	%{version}
-Release:	27
+Release:	28
 License:	MIT
 Group:		Toys
-BuildRequires:	pkgconfig(x11) libxext-devel imake
+BuildRequires:	pkgconfig(x11) 
+BuildRequires:  pkgconfig(xext)
+BuildRequires:  imake
 
 Source:		http://metalab.unc.edu/pub/Linux/X11/demos/xfishtank-%{version}.tar.bz2
 Patch:		xfishtank-2.1tp-xf4.patch
@@ -24,11 +26,11 @@ environment sets the background.
 
 %build
 xmkmf
-%make CDEBUGFLAGS="$RPM_OPT_FLAGS"
+%make_build CDEBUGFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall_std
+%make_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
